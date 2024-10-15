@@ -1,0 +1,40 @@
+main {
+  background-color: #ccc;
+}
+
+.menuTop_content {
+  display: flex;
+  justify-content: space-between;
+  /* background-color: black; */
+
+
+
+  & .Content {
+    width: 100%;
+    padding-inline: 80px;
+    text-align: center;
+    height: 60px;
+    background: linear-gradient(#000000e1 50%, #000000b6 80%, #00000070);
+    align-items: center;
+    justify-items: center;
+    display: flex;
+    border-bottom: 5px solid rgba(204, 204, 204, 0.863);
+    cursor: pointer;
+    border-top: 1px solid #000000b6;
+    text-transform: uppercase;
+    font-size: var(--text-sm);
+
+    & a {
+      color: white;
+      width: 100%;
+      font-family: "Inter", sans-serif;
+
+
+    }
+  }
+
+  .Content:nth-child(1) {
+    border-bottom: 5px solid var(--car-sun);
+    color: rgba(0, 0, 255, 0.75);
+  }
+}
