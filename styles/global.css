@@ -30,8 +30,7 @@ button {
   font: 400 1rem/1.5 var(--ff-base);
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Syne", sans-serif;
 }
 
