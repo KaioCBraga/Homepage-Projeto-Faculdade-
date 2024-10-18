@@ -11,6 +11,10 @@ header {
 
 }
 
+.menu-hb img {
+  display: none;
+}
+
 .right-menu {
   display: flex;
   gap: 20px;
@@ -50,51 +54,50 @@ header {
 }
 
 @media (max-width: 800px) {
-  .configuracoes {
-    span {
+  header {
+    padding-inline: 20px;
+
+    & .configuracoes,
+    .usuario {
+      padding: 2px 6px;
+      font-size: 14px;
+    }
+
+    & .configuracoes img,
+    .usuario img {
+      height: 20px;
+
+    }
+
+
+    & .configuracoes span {
       display: none;
     }
-  }
-
-  header .logo img {
-    height: 100px;
-    width: 100px;
-  }
-
-  header .right-menu .configuracoes,
-  header .right-menu .usuario {
-    padding: 2px 6px;
-  }
-}
-
-@media (max-width: 570px) {
-
-
-  header {
-    align-items: center;
 
     & .logo img {
-      height: 80px;
-      width: 80px;
-    }
-  }
-
-
-  .usuario img,
-  .configuracoes img {
-    height: 20px;
-  }
-
-  .usuario {
-    span {
-      display: none;
+      height: 120px;
+      width: 120px;
     }
   }
 }
 
-@media (max-width:400px) {
-  .right-menu img {
-    height: 20px;
-    border: none;
+@media (max-width: 450px) {
+  header {
+    padding-inline: 20px;
+
+    & .configuracoes,
+    .usuario {
+      display: none;
+    }
+
+    & .menu-hb img {
+      display: block;
+    }
+
+
+    & .logo img {
+      height: 100px;
+      width: 100px;
+    }
   }
 }
