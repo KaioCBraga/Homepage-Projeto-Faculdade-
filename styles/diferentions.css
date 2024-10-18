@@ -54,10 +54,16 @@ section.diferentions {
     background-size: contain;
     height: 450px;
     border-radius: 4px;
+    animation: image-appear linear backwards;
+    position: relative;
+    overflow: hidden;
+    animation-timeline: view();
+    animation-range: 100px 300px;
   }
 
   & figcaption {
     padding: 10px 30px;
+    position: absolute;
 
     & h3 {
       margin-bottom: 20px;
@@ -66,4 +72,14 @@ section.diferentions {
   }
 
 
+}
+
+
+@keyframes image-appear {
+  from {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+
+  to {}
 }
