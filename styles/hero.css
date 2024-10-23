@@ -1,3 +1,10 @@
+.hero-container {
+  background-image: url(../img/hero/opacity--hero-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 section.hero {
   max-width: 100rem;
   width: 100%;
@@ -7,7 +14,7 @@ section.hero {
   align-items: center;
   justify-content: space-between;
   overflow: hidden;
-  height: 80vh;
+  height: auto;
 
 
   & h1 div {
@@ -20,6 +27,8 @@ section.hero {
 
   & h1 {
     max-width: 40rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.712);
   }
 
   & h1 span:nth-child(1),
@@ -47,6 +56,8 @@ section.hero {
     display: flex;
     gap: 2rem;
     margin-top: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.712);
 
     & .button {
       display: flex;
@@ -89,6 +100,7 @@ section.hero {
     width: 100%;
     max-width: 688px;
     height: 688px;
+
 
     & .content {
       width: 100%;
@@ -275,6 +287,7 @@ section.hero {
 
         &.services {
           padding: 1rem 3rem;
+          color: white;
         }
 
         &.agenda {
