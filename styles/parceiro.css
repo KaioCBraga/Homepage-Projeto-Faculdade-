@@ -45,3 +45,17 @@
 
 
 }
+
+
+@media (max-width: 650px) {
+  .parceiro-body {
+    & .button {
+      padding: 1rem 1.5rem;
+    }
+
+    & h2 {
+      font-size: 40px;
+      line-height: 1.2;
+    }
+  }
+}

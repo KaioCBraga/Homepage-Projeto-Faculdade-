@@ -83,3 +83,31 @@ section.diferentions {
 
   to {}
 }
+
+@media (max-width: 1200px) {
+  .diferentions-body {
+    & img {
+      width: 100%;
+      height: 180px;
+    }
+
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 700px) {
+  .diferentions-header {
+    & h2 {
+      font-size: 35px;
+      line-height: 1.2;
+    }
+
+    & span {
+      font-size: 14px;
+    }
+  }
+
+  .diferentions-body {
+    grid-template-columns: 1fr;
+  }
+}

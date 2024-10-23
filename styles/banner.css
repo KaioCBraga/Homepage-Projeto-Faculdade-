@@ -62,3 +62,26 @@
     transform: translateX(-100%);
   }
 }
+
+@media (max-width: 1200px) {
+  .logos-slide img {
+    height: 80px;
+  }
+}
+
+@media (max-width: 450px) {
+  .logos-slide img {
+    height: 60px;
+  }
+
+  .main-banner .conteudo {
+    & h2 {
+      line-height: 1.5;
+      font-size: 36px;
+    }
+
+    & span {
+      font-size: 14px;
+    }
+  }
+}

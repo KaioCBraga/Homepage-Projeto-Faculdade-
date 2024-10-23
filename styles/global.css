@@ -7,16 +7,6 @@
 }
 
 :root {
-  --car-sun: rgba(0, 0, 255, 0.75);
-  --car-sky-mid: #06B6D4;
-  --car-sky-light: #67E8F9;
-  --car-joy-mid: #DB2777;
-  --car-joy-light: #F472B6;
-  --car-leaf-mid: #16A34A;
-  --text: #000;
-  --highlights: #000;
-  --background: #FAFAFA;
-
   --ff-base: "Montserrat", sans-serif;
   --text-sm: 0.875rem;
   --text-base: 1rem;
@@ -39,12 +29,8 @@ h1 {
   line-height: 1.25;
 }
 
-h2 {
-  font-size: var(--text-lg);
-  line-height: 1.2;
-}
-
 a {
   color: inherit;
   text-decoration: none;
 }
+
