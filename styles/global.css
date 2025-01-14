@@ -13,7 +13,9 @@
   --text-lg: 2.5rem;
   --text-xl: 4rem;
 }
-
+body {
+  background-image: url(../img/solutionsfundo.jpg);
+}
 
 html,
 button {
@@ -33,4 +35,3 @@ a {
   color: inherit;
   text-decoration: none;
 }
-

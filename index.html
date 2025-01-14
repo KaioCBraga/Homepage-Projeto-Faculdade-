@@ -1,280 +1,390 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Homepage</title>
-  <link rel="stylesheet" href="./styles/index.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital@0;1&family=Syne:wght@700&display=swap"
-    rel="stylesheet">
-</head>
-
-<body>
-  <Header>
-    <div class="header-container">
-      <div class="logo"><a href=""><img src="img/logo.png" alt="" height="150px" width="150px"></a></div>
-      <div class="right-menu">
-        <a href="">
-          <div class="usuario">
-            <img src="img/icons/user.png" alt="" height="25px">
-            <span>Login</span>
-          </div>
-        </a>
-        <a href="">
-          <div class="configuracoes">
-            <img src="img/icons/configurações.png" alt="" height="25px">
-            <span>Configurações</span>
-          </div>
-        </a>
-        <a href="">
-          <div class="menu-hb">
-            <img src="img/icons/menu-hambúrguer.png" alt="" height="24px"">
-          </div>
-        </a>
-      </div>
-    </div>
-
-    <nav class=" menuTop">
-            <div class="menuTop_content">
-              <div class="home Content"><a href="">Página Inicial</a></div>
-              <div class="servicesOrfetados Content"><a href="">Serviços Orfetados</a></div>
-              <div class="servicesAgendamento Content"><a href="">Agendamento de Serviços</a></div>
-              <div class="servicesAberto Content"><a href="">Serviços em Aberto</a></div>
-              <div class="servicesRealizados Content"><a href="">Serviços Realizados</div>
-        </a>
-      </div>
-
-      </nav>
-  </Header>
-  <main>
-    <div class="hero-container">
-      <section class="hero">
-        <div>
-          <h1>Autocheck, sua mecânica mais
-            <div>
-              <span>prática</span>
-              <span>rápida</span>
-              <span>eficaz</span>
-              <span>prática</span>
-            </div>
-          </h1>
-          <div class="buttons">
-            <a href="#" class="button services shadow">
-              <img src="img/icons/oficina.png" alt="" height="24px">
-              SERVIÇOS ORFETADOS
-            </a>
-            <a href="#" class="button agenda">
-              <span class="shadow">
-                <img src="img/icons/agenda.png" alt="" height="24px">
-              </span>
-              AGENDAMENTO
-            </a>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz@0,14..32;1,14..32&family=Montserrat:ital@0;1&family=Syne:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <div class="logo">
+          <img src="img/logo.png" alt="Logo" />
         </div>
-        <div>
-          <div class="content">
-            <img src="img/hero/audi.png" alt="">
-            <img src="img/hero/stars-1.svg" alt="">
-            <img src="img/hero/stars-2.svg" alt="">
+
+        <div class="user-options">
+          <a href="../cadastro_Login/Cad_prop.html" class="user-option">
+            <i>👤</i>
+            <span>Login</span>
+          </a>
+          <a href="../Perfil_Proprietario/index.html" class="user-option">
+            <i>⚙️</i>
+            <span>Configurações</span>
+          </a>
+        </div>
+
+        <button class="mobile-menu-btn">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </header>
+    <nav class="main-nav">
+      <div class="nav-container">
+        <div class="nav-menu">
+          <ul class="nav-links">
+            <li>
+              <a href="../homepage-proprietario/index.html" class="nav-link active"
+                >Página Inicial</a
+              >
+            </li>
+            <li>
+              <a
+                href="../servicos-ofertados-proprietario/index.html"
+                class="nav-link"
+                >Serviços Ofertados</a
+              >
+            </li>
+            <li><a href="../gestão_de_os/index.html" class="nav-link">Gestão de Ordem de Serviço</a></li>
+            <li>
+              <a href="../servico_realz_proprietario/index.html" class="nav-link"
+                >Serviços Realizados</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="mobile-menu">
+      <nav>
+        <ul class="mobile-nav-links">
+          <li>
+            <a href="../homepage-proprietario/index.html" class="mobile-nav-link"
+              ><i>🏠</i>Página Inicial</a
+            >
+          </li>
+          <li>
+            <a
+              href="../servicos-ofertados-proprietario/index.html"
+              class="mobile-nav-link"
+              ><i>🛠️</i>Serviços Ofertados</a
+            >
+          </li>
+          <li>
+            <a href="../gestão_de_os/index.html" class="mobile-nav-link">
+              <i>👨‍🔧</i>Gestão de Ordem de Serviço
+            </a>
+          </li>
+          <li>
+            <a
+              href="../servico_realz_proprietario/index.html"
+              class="mobile-nav-link"
+              ><i>🚗</i>Serviços Realizados</a
+            >
+          </li>
+          <div class="menu-divider"></div>
+          <li>
+            <a
+              href="../cadastro_Login/Cad_prop.html"
+              class="mobile-nav-link"
+              ><i>👤</i>Login</a
+            >
+          </li>
+          <li>
+            <a href="../Perfil_Proprietario/index.html" class="mobile-nav-link"
+              ><i>⚙️</i>Configurações</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="menu-overlay"></div>
+    <main>
+      <div class="hero-container">
+        <section class="hero">
+          <div>
+            <h1>
+              Autocheck, sua mecânica mais
+              <div>
+                <span>prática</span>
+                <span>rápida</span>
+                <span>eficaz</span>
+                <span>prática</span>
+              </div>
+            </h1>
+            <div class="buttons">
+              <a
+                href="../servicos-ofertados-proprietario/index.html"
+                class="button services shadow"
+              >
+                <img src="img/icons/oficina.png" alt="" height="24" />
+                SERVIÇOS OFERTADOS
+              </a>
+            </div>
+          </div>
+          <div>
+            <div class="content">
+              <img src="img/hero/audi.png" alt="" />
+              <img src="img/hero/stars-1.svg" alt="" />
+              <img src="img/hero/stars-2.svg" alt="" />
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <section class="solutions">
+        <div class="solutions-element">
+          <div class="solutions-intro">
+            <h2>Todas as soluções em apenas um lugar!</h2>
+            <p>
+              Nossa empresa oferece mais do que serviços mecânicos
+              convencionais.
+              <strong>Proporcionamos uma solução integrada</strong> que auxilia
+              na identificação da <strong>oficina mais apropriada</strong> para
+              suas demandas particulares. Asseguramos um
+              <strong>atendimento customizado e eficaz</strong>, tudo isso com a
+              conveniência de
+              <strong>não precisar sair de sua residência.</strong>
+            </p>
+          </div>
+          <div class="solutions-body">
+            <div class="elements">
+              <span
+                ><img src="img/icons/checked.png" alt="" />Alinhamento 3d</span
+              >
+              <span><img src="img/icons/checked.png" alt="" />Pneus</span>
+              <span><img src="img/icons/checked.png" alt="" />Revisão</span>
+              <span
+                ><img src="img/icons/checked.png" alt="" />Ar-Condicionado</span
+              >
+              <span><img src="img/icons/checked.png" alt="" />Freios</span>
+              <span><img src="img/icons/checked.png" alt="" />Suspensão</span>
+              <span
+                ><img src="img/icons/checked.png" alt="" />Injeção
+                eletrônica</span
+              >
+              <span><img src="img/icons/checked.png" alt="" />Acessórios</span>
+              <span><img src="img/icons/checked.png" alt="" />Câmbio</span>
+              <span
+                ><img src="img/icons/checked.png" alt="" />Diagnósticos</span
+              >
+              <span><img src="img/icons/checked.png" alt="" />Rodas</span>
+              <span
+                ><img src="img/icons/checked.png" alt="" />Conveniência</span
+              >
+            </div>
           </div>
         </div>
       </section>
-    </div>
-    <section class="solutions">
-      <div class="solutions-element">
-        <div class="solutions-intro">
-          <h2>Todas as soluções em apenas um lugar!</h2>
-          <p>Nossa empresa oferece mais do que serviços mecânicos convencionais. <strong>Proporcionamos uma solução
-              integrada</strong> que
-            auxilia na identificação da <strong>oficina mais apropriada</strong> para suas demandas particulares.
-            Asseguramos um
-            <strong>atendimento customizado e eficaz</strong>, tudo isso com a conveniência de <strong>não precisar sair
-              de sua residência.</strong>
-          </p>
-        </div>
-        <div class="solutions-body">
-          <div class="elements">
-            <span><img src="img/icons/checked.png" alt="">Alinhamento 3d</span>
-            <span><img src="img/icons/checked.png" alt="">Pneus</span>
-            <span><img src="img/icons/checked.png" alt="">Revisão</span>
-            <span><img src="img/icons/checked.png" alt="">Ar-Condicionado</span>
-            <span><img src="img/icons/checked.png" alt="">Freios</span>
-            <span><img src="img/icons/checked.png" alt="">Suspensão</span>
-            <span><img src="img/icons/checked.png" alt="">Injeção eletrônica</span>
-            <span><img src="img/icons/checked.png" alt="">Acessórios</span>
-            <span><img src="img/icons/checked.png" alt="">Câmbio</span>
-            <span><img src="img/icons/checked.png" alt="">Diagnósticos</span>
-            <span><img src="img/icons/checked.png" alt="">Rodas</span>
-            <span><img src="img/icons/checked.png" alt="">Conveniência</span>
+
+      <section class="banner">
+        <div class="main-banner">
+          <div class="conteudo">
+            <span>atuamos com nacional e importados</span>
+            <h2>
+              Nossos parceiros são referência em manutenção e assistência em
+              diversas marcas!
+            </h2>
+          </div>
+          <div class="logos">
+            <div class="logos-slide">
+              <img src="img/banner/logo-audi.png" alt="" />
+              <img src="img/banner/logo-bmw.png" alt="" />
+              <img src="img/banner/logo-chevrolet.png" alt="" />
+              <img src="img/banner/logo-fiat.png" alt="" />
+              <img src="img/banner/logo-ford.png" alt="" />
+              <img src="img/banner/logo-honda.png" alt="" />
+              <img src="img/banner/logo-nissan.png" alt="" />
+              <img src="img/banner/logo-porsche.png" alt="" />
+              <img src="img/banner/logo-renault.png" alt="" />
+              <img src="img/banner/logo-suzuki.png" alt="" />
+              <img src="img/banner/logo-tesla.png" alt="" />
+              <img src="img/banner/logo-volkswagen.png" alt="" />
+              <img src="img/banner/logo-chevrolet.png" alt="" />
+              <img src="img/banner/logo-mazda.png" alt="" />
+              <img src="img/banner/logo-subaru.png" alt="" />
+              <img src="img/banner/logo-maserati.png" alt="" />
+            </div>
+            <div class="logos-slide">
+              <img src="img/banner/logo-audi.png" alt="" />
+              <img src="img/banner/logo-bmw.png" alt="" />
+              <img src="img/banner/logo-chevrolet.png" alt="" />
+              <img src="img/banner/logo-fiat.png" alt="" />
+              <img src="img/banner/logo-ford.png" alt="" />
+              <img src="img/banner/logo-honda.png" alt="" />
+              <img src="img/banner/logo-nissan.png" alt="" />
+              <img src="img/banner/logo-porsche.png" alt="" />
+              <img src="img/banner/logo-renault.png" alt="" />
+              <img src="img/banner/logo-suzuki.png" alt="" />
+              <img src="img/banner/logo-tesla.png" alt="" />
+              <img src="img/banner/logo-volkswagen.png" alt="" />
+              <img src="img/banner/logo-chevrolet.png" alt="" />
+              <img src="img/banner/logo-mazda.png" alt="" />
+              <img src="img/banner/logo-subaru.png" alt="" />
+              <img src="img/banner/logo-maserati.png" alt="" />
+            </div>
           </div>
         </div>
+      </section>
 
-
-    </section>
-    <section class="banner">
-      <div class="main-banner">
-
-        <div class="conteudo">
-          <span>atuamos com nacional e importados</span>
-          <h2>Nossos parceiros são referência em manutenção e assistência em diversas marcas!</h2>
-        </div>
-        <div class="logos">
-          <div class="logos-slide">
-            <img src="img/banner/logo-audi.png" alt="">
-            <img src="img/banner/logo-bmw.png" alt="">
-            <img src="img/banner/logo-chevrolet.png" alt="">
-            <img src="img/banner/logo-fiat.png" alt="">
-            <img src="img/banner/logo-ford.png" alt="">
-            <img src="img/banner/logo-honda.png" alt="">
-            <img src="img/banner/logo-nissan.png" alt="">
-            <img src="img/banner/logo-porsche.png" alt="">
-            <img src="img/banner/logo-renault.png" alt="">
-            <img src="img/banner/logo-suzuki.png" alt="">
-            <img src="img/banner/logo-tesla.png" alt="">
-            <img src="img/banner/logo-volkswagen.png" alt="">
-            <img src="img/banner/logo-chevrolet.png" alt="">
-            <img src="img/banner/logo-mazda.png" alt="">
-            <img src="img/banner/logo-subaru.png" alt="">
-            <img src="img/banner/logo-maserati.png" alt="">
+      <section class="diferentions">
+        <div class="diferentions-content">
+          <div class="diferentions-header">
+            <span>Diferenciais e Exclusividades</span>
+            <h2>
+              Nos dedicamos 100% no seu conforto e na segurança do seu veículo!
+            </h2>
           </div>
-          <div class="logos-slide">
-            <img src="img/banner/logo-audi.png" alt="">
-            <img src="img/banner/logo-bmw.png" alt="">
-            <img src="img/banner/logo-chevrolet.png" alt="">
-            <img src="img/banner/logo-fiat.png" alt="">
-            <img src="img/banner/logo-ford.png" alt="">
-            <img src="img/banner/logo-honda.png" alt="">
-            <img src="img/banner/logo-nissan.png" alt="">
-            <img src="img/banner/logo-porsche.png" alt="">
-            <img src="img/banner/logo-renault.png" alt="">
-            <img src="img/banner/logo-suzuki.png" alt="">
-            <img src="img/banner/logo-tesla.png" alt="">
-            <img src="img/banner/logo-volkswagen.png" alt="">
-            <img src="img/banner/logo-chevrolet.png" alt="">
-            <img src="img/banner/logo-mazda.png" alt="">
-            <img src="img/banner/logo-subaru.png" alt="">
-            <img src="img/banner/logo-maserati.png" alt="">
+          <div class="diferentions-body">
+            <div class="diferentions-item">
+              <figure>
+                <img
+                  src="img/diferentions/atendimento.jpg"
+                  alt=""
+                  height="400"
+                />
+                <figcaption>
+                  <h3>Excelência em atendimento</h3>
+                  <p>
+                    Nosso compromisso em proporcionar uma experiência única e
+                    satisfatória destaca-se como nossa marca registrada.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="diferentions-item">
+              <figure>
+                <img src="img/diferentions/suporte.jpg" alt="" height="400" />
+                <figcaption>
+                  <h3>Do Popular ao Luxo</h3>
+                  <p>
+                    Oferecemos suporte a qualquer veículo. Desde o popular ao
+                    luxo, sejam nacionais ou importados. Nosso objetivo é
+                    solucionar o seu problema!
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="diferentions-item">
+              <figure>
+                <img
+                  src="img/diferentions/profissionais.jpg"
+                  alt=""
+                  height="400"
+                />
+                <figcaption>
+                  <h3>Profissionais Altamente Qualificados</h3>
+                  <p>
+                    Todos nossos parceiros contam com uma equipe de
+                    especialistas em diferentes funções, altamente dedicados e
+                    profissionais.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="diferentions-item">
+              <figure>
+                <img src="img/diferentions/estoque.jpg" alt="" height="400" />
+                <figcaption>
+                  <h3>Suprimentos</h3>
+                  <p>
+                    Além da mão de obra, oferecemos também toda linha de
+                    suprimentos necessária para o conserto do seu veículo.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="diferentions-item">
+              <figure>
+                <img src="img/diferentions/limpeza.jpg" alt="" height="400" />
+                <figcaption>
+                  <h3>Rígidos Protocolos de Limpeza</h3>
+                  <p>
+                    Do início ao fim. Garantimos toda segurança de dentro para
+                    fora contra odores, poeira e outros materiais.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="diferentions-item">
+              <figure>
+                <img src="img/diferentions/caminhoes.jpg" alt="" height="400" />
+                <figcaption>
+                  <h3>Mecânica Diesel</h3>
+                  <p>
+                    Pequenos caminhões (VUC - veículos urbanos de carga),
+                    caminhonetes e Pickups. Oferecemos manutenção, revisão e
+                    todo o suporte.
+                  </p>
+                </figcaption>
+              </figure>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="diferentions">
-      <div class="diferentions-content">
-        <div class="diferentions-header">
-          <span>Diferenciais e Exclusividades</span>
-          <h2>Nos dedicamos 100% no seu conforto e na segurança do seu veículo!</h2>
-        </div>
-        <div class="diferentions-body">
-          <diferentions-item>
-            <figure>
-              <img src="img/diferentions/atendimento.jpg" alt="" height="400px">
-              <figcaption>
-                <h3>Excelência em atendimento</h3>
-                <p>Nosso compromisso em proporcionar uma experiência única e satisfatória destaca-se como nossa marca
-                  registrada.</p>
-              </figcaption>
-            </figure>
-          </diferentions-item>
-          <diferentions-item>
-            <figure>
-              <img src="img/diferentions/suporte.jpg" alt="" height="400px">
-              <figcaption>
-                <h3>Do Popular ao Luxo</h3>
-                <p>Oferecemos suporte a qualquer veículo. Desde o popular ao luxo, sejam nacionais ou importados. Nosso
-                  objetivo é solucionar o seu problema!</p>
-              </figcaption>
-            </figure>
-          </diferentions-item>
-          <diferentions-item>
-            <figure>
-              <img src="img/diferentions/profissionais.jpg" alt="" height="400px">
-              <figcaption>
-                <h3>Profissionais Altamente Qualificados</h3>
-                <p>Todos nossos parceiros contam com uma equipe de especialistas em diferentes funções, altamente
-                  dedicados e profissionais.</p>
-              </figcaption>
-            </figure>
-          </diferentions-item>
-          <diferentions-item>
-            <figure>
-              <img src="img/diferentions/estoque.jpg" alt="" height="400px">
-              <figcaption>
-                <h3>Suprimentos</h3>
-                <p>Além da mão de obra, oferecemos também toda linha de suprimentos necessária para o conserto do seu
-                  veículo.</p>
-              </figcaption>
-            </figure>
-          </diferentions-item>
-          <diferentions-item>
-            <figure>
-              <img src="img/diferentions/limpeza.jpg" alt="" height="400px">
-              <figcaption>
-                <h3>Rígidos Protocolos de Limpeza</h3>
-                <p>Do início ao fim. Garantimos toda segurança de dentro para fora contra odores, poeira e outros
-                  materiais.</p>
-              </figcaption>
-            </figure>
-          </diferentions-item>
-          <diferentions-item>
-            <figure>
-              <img src="img/diferentions/caminhoes.jpg" alt="" height="400px">
-              <figcaption>
-                <h3>Mecânica Diesel</h3>
-                <p>Pequenos caminhões (VUC - veículos urbanos de carga), caminhonetes e Pickups. Oferecemos manutenção,
-                  revisão e todo o suporte.</p>
-              </figcaption>
-            </figure>
-          </diferentions-item>
-        </div>
-      </div>
-    </section>
-    <section class="parceiro">
-      <div class="parceiro-body">
-        <h2>Entre em contato para se<br> tornar um parceiro <br><strong>Autocheck!</strong></h2>
-        <a href="#" class="button">
-          <img src="img/icons/whatsapp.svg" alt="" height="24px">
-          falar no whatssap
-        </a>
-      </div>
-    </section>
-  </main>
-  <footer>
-    <div class="contato">
-      <h4>Entre em contato</h4>
-      <div class="whatssap">
-        <img src="img/icons/whatsapp.svg" alt="" height="30px">
-        <span>(xx) xxxxxxxxx</span>
-      </div>
-      <div class="telefone">
-        <img src="img/icons/telefone.svg" alt="" height="30px">
-        <span>(xx) xxxxxxxxx</span>
-      </div>
-    </div>
-    <div class="footer-main">
-      <a href="index.html"><img src="img/logo.png" alt="" height="200px"></a>
-      <span>© Copyright 2024</span>
-    </div>
-    <div class="redes-sociais">
-      <h4>Redes Sociais</h4>
-      <div class="facebook">
-        <a href="">
-          <img src="img/icons/facebook.svg" alt="" height="30px">
-          <span>Facebook</span>
-        </a>
-      </div>
-      <div class="instagram">
-        <a href=""><img src="img/icons/instagram.svg" alt="" height="30px">
-          <span>Instagram</span></a>
-      </div>
-    </div>
-  </footer>
-</body>
+      </section>
 
+      <section class="parceiro">
+        <div class="parceiro-body">
+          <h2>
+            Entre em contato para se<br />
+            tornar um parceiro <br /><strong>Autocheck!</strong>
+          </h2>
+          <a
+            href="https://wa.me/5527933006314?text=Quero%20me%20tornar%20um%20parceiro%20AutoCheck!"
+            class="button"
+          >
+            <img src="img/icons/whatsapp.svg" alt="" height="24" />
+            falar no whatssap
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="contato">
+        <h4>Entre em contato</h4>
+        <div class="whatssap">
+          <img src="img/icons/whatsapp.svg" alt="" height="30" />
+          <span>(xx) xxxxxxxxx</span>
+        </div>
+        <div class="telefone">
+          <img src="img/icons/telefone.svg" alt="" height="30" />
+          <span>(xx) xxxxxxxxx</span>
+        </div>
+      </div>
+      <div class="footer-main">
+        <a href="index.html"><img src="img/logo.png" alt="" height="200" /></a>
+        <span>© Copyright 2024</span>
+      </div>
+      <div class="redes-sociais">
+        <h4>Redes Sociais</h4>
+        <div class="facebook">
+          <a href="">
+            <img src="img/icons/facebook.svg" alt="" height="30" />
+            <span>Facebook</span>
+          </a>
+        </div>
+        <div class="instagram">
+          <a href="">
+            <img src="img/icons/instagram.svg" alt="" height="30" />
+            <span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/header.js"></script>
+  </body>
 </html>
